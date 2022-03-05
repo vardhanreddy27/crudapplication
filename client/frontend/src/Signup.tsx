@@ -15,7 +15,7 @@ const [name,setName]=useState('');
 const [password,setPassword]=useState('');
 const [email,setEmail]=useState('');
 const sform =()=>{
-Axios.post("http://localhost:3001/sinsert",{name:name,email:email,password:password,});
+Axios.post("https://backend-gules-alpha.vercel.app/sinsert",{name:name,email:email,password:password,});
 
 };
 
@@ -29,7 +29,6 @@ const formSchema = Yup.object().shape({
 const formOptions = { resolver: yupResolver(formSchema) }
 const { register, handleSubmit, reset, formState } = useForm(formOptions)
 const { errors } = formState
-const dispatch = useAppDispatch();
 
   async function onSubmit(data: any) {
   console.log(JSON.stringify(data, null, 4))
