@@ -1,0 +1,113 @@
+a{text-decoration: none!important;    color: blueviolet!important;
+}
+.signup{
+    color: blueviolet;
+}.login{
+    color: blueviolet;
+}
+.btn-primary{
+    background-color:blueviolet!important;
+    border-color:blueviolet!important ;
+
+
+}
+.color{
+    color: black!important;
+}
+.top{
+    padding-top: 20px!important;
+}
+.light{
+    color: rgb(172, 172, 172);
+}
+.letter{   letter-spacing: 0px; 
+}
+.size{font-size: 0.8rem;}
+.size1{
+    margin-top: 159px!important;font-size: 0.8rem;
+
+}
+.top{
+    margin-top: 40px;
+}
+.in{height: 50px!important;}
+.tp{
+    margin-top: 171px;
+
+}.tp1{
+    margin-top: 170px;
+
+}
+.right{    margin-top: -5px;
+    width: 30px;
+}
+.btn3{
+    margin-left: 90px;margin-top: 9px;float: right;
+}
+.img22{
+    padding-top: 20px;
+    height: 500px!important;position: absolute;
+    padding-right: calc(var(--bs-gutter-x) * .0)!important;width: 98%!important;
+    padding-left: calc(var(--bs-gutter-x) * .0)!important;}
+.si{PADDING-TOP: 15px;
+padding-left: 10px;}
+.coi{
+    float: right;    margin-bottom: 0rem;
+    margin-top: 16px;
+}
+.img2{
+    height: 20px;  
+}
+.lend {
+    margin-top: 507px!important;
+    width: 103px!important;
+    margin-left:  259px!important;
+}
+.btn1{
+    background-color: white!important;
+    border-color:rgb(136, 136, 136)!important ;
+    color: rgb(145, 145, 145)!important;
+
+}.google{
+    width: 24px;margin-right: 9px;
+}
+.d{
+    
+        display: inline!important;
+        margin-top: -34px!important;
+    
+}
+.pad{
+    margin-right: 5px!important;
+}
+.strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap; 
+}
+
+.strike > span {
+    position: relative;
+    display: inline-block;
+}
+
+.strike > span:before,
+.strike > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: black;
+}
+
+.strike > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
