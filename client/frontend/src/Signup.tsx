@@ -34,8 +34,7 @@ const dispatch = useAppDispatch();
   async function onSubmit(data: any) {
   console.log(JSON.stringify(data, null, 4))
   alert('registred');
-  const res=await   Axios.post("http://localhost:3001/read",{email:email,password:password,});
-  dispatch(login(res))
+  
 }
   return (  
   
