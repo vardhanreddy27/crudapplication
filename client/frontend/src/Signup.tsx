@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Routes, Route,Link } from "react-router-dom";
 import ReactDOM from "react-dom";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { Container, Form, Button } from 'react-bootstrap';
+import { useAppDispatch } from './app/hooks';
+
 function Signup()
 {
 const [name,setName]=useState('');
@@ -27,9 +29,13 @@ const formSchema = Yup.object().shape({
 const formOptions = { resolver: yupResolver(formSchema) }
 const { register, handleSubmit, reset, formState } = useForm(formOptions)
 const { errors } = formState
-function onSubmit(data: any) {
+const dispatch = useAppDispatch();
+
+  async function onSubmit(data: any) {
   console.log(JSON.stringify(data, null, 4))
-  return false
+  alert('registred');
+  const res=await   Axios.post("http://localhost:3001/read",{email:email,password:password,});
+  dispatch(login(res))
 }
   return (  
   
