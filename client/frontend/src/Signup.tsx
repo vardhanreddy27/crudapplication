@@ -71,7 +71,7 @@ const { errors } = formState
     Accept The Terms & Conditions.  <Link to="/">   Click Here</Link> 
   </label>
 </div>
-    <Button  type="submit" onClick={sform} className="btn btn-lg btn-block col-12 mt-3">Sign up</Button>
+  <Link to="/Login">  <Button  type="submit" onClick={sform} className="btn btn-lg btn-block col-12 mt-3">Sign up</Button></Link>
     <p className="mt-3 text-center letter">Already have account?         <Link to="/Login">Sign in</Link> 
 
    
