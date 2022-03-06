@@ -14,7 +14,7 @@ const dispatch = useAppDispatch();
 const [email,setEmail]=useState('');
 const [password,setPassword]=useState('');
 const Sform =async()=>{
- const res=await   Axios.post("http://localhost:3001/read",{email:email,password:password,});
+ const res=await   Axios.post("https://gentle-wildwood-96779.herokuapp.co/read",{email:email,password:password,});
  dispatch(login(res))
 };
 
