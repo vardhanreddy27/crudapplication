@@ -15,7 +15,7 @@ const [name,setName]=useState('');
 const [password,setPassword]=useState('');
 const [email,setEmail]=useState('');
 const sform =()=>{
-Axios.post("https://backend-gules-alpha.vercel.app/sinsert",{name:name,email:email,password:password,});
+Axios.post("https://gentle-wildwood-96779.herokuapp.co/sinsert",{name:name,email:email,password:password,});
 
 };
 
